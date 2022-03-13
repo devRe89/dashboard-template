@@ -18,11 +18,11 @@ export default () => {
             <Col xs={12} className="d-flex align-items-center justify-content-center">
               <div className="bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                 <div className="text-center text-md-center mb-4 mt-md-0">
-                  <h3 className="mb-0">Sign in to our platform</h3>
+                  <h3 className="mb-0">Iniciar sesión</h3>
                 </div>
                 <Form className="mt-4">
                   <Form.Group id="email" className="mb-4">
-                    <Form.Label>Your Email</Form.Label>
+                    <Form.Label>Correo Electronico</Form.Label>
                     <InputGroup>
                       <InputGroup.Text>
                         <FontAwesomeIcon icon={faEnvelope} />
@@ -32,7 +32,7 @@ export default () => {
                   </Form.Group>
                   <Form.Group>
                     <Form.Group id="password" className="mb-4">
-                      <Form.Label>Your Password</Form.Label>
+                      <Form.Label>Contraseña</Form.Label>
                       <InputGroup>
                         <InputGroup.Text>
                           <FontAwesomeIcon icon={faUnlockAlt} />
@@ -43,20 +43,20 @@ export default () => {
                     <div className="d-flex justify-content-between align-items-center mb-4">
                       <Form.Check type="checkbox">
                         <FormCheck.Input id="defaultCheck5" className="me-2" />
-                        <FormCheck.Label htmlFor="defaultCheck5" className="mb-0">Remember me</FormCheck.Label>
+                        <FormCheck.Label htmlFor="defaultCheck5" className="mb-0">Recordar contraseña</FormCheck.Label>
                       </Form.Check>
-                      <Card.Link className="small text-end">Lost password?</Card.Link>
+                      <Card.Link className="small text-end">Recuperar contraseña</Card.Link>
                     </div>
                   </Form.Group>
                   <Button variant="primary" type="submit" className="w-100">
-                    Sign in
+                    Continuar
                   </Button>
                 </Form>
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
-                    Not registered?
+                    ¿No estas registrado? 
                     <Card.Link as={Link} to={DashboardRoutes.Signup.path} className="fw-bold">
-                      {` Create account `}
+                      {` Crear una cuenta `}
                     </Card.Link>
                   </span>
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Accordion } from '@themesberg/react-bootstrap';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (props) => {
   const { defaultKey, data = [], className = "" } = props;
 

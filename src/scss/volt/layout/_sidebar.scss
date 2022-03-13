@@ -2,15 +2,15 @@
  * = Sidebars
  */
 
-#doc-index:not(.collapse.show), .doc-sidebar {
+#doc-index:not(.collapse.show),
+.doc-sidebar {
     display: none;
 }
 
-@include media-breakpoint-up(lg){
-    #doc-index{
+@include media-breakpoint-up(lg) {
+    #doc-index {
         display: block;
     }
-    
     .doc-sidebar {
         display: block;
         height: calc(100vh - 2rem);
@@ -18,20 +18,22 @@
         position: -webkit-sticky;
         position: sticky;
         top: 2rem;
-
-        .nav-link[data-toggle="collapse"] > .icon {
+        .nav-link[data-toggle="collapse"]>.icon {
             transform: rotateZ(-90deg);
             position: relative;
             right: .25rem;
         }
-
-        .nav{
-            .nav-item{
-                font-size:$font-size-sm;
+        .nav {
+            .nav-item {
+                font-size: $font-size-sm;
             }
         }
-    } 
-}  
+    }
+}
+
+.sidebar .nav-item .nav-link {
+    background: $default;
+}
 
 .upgrade-to-pro {
     position: fixed;
